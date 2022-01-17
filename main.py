@@ -168,6 +168,8 @@ model2 = keras.Sequential([
 ])
 # final_val_accuracy = 93%
 
+# As it seems, in this case it's better to just use a simple network
+# and not using bigger networks with more regulation.
 model = model1
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
